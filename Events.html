@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Events - Seva Bharti Vivekanand Vidya Mandir</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            
+            <div class="logo-section-left">
+                <img src="images/logo (1).jpeg" alt="School Logo">
+            </div>
+            
+            <!-- Center School Info -->
+            <div class="school-info">
+                <h1 data-i18n="school_name">Seva Bharti Vivekanand Vidya Mandir</h1>
+                <p data-i18n="school_tagline">Empowering Rural Education with Excellence</p>
+            </div>
+            
+            <!-- Right Logo -->
+            <div class="header-right">
+                <img src="images/1394085030_swami_vivekanand_332 (1)-Photoroom.png" alt="Right Logo">
+            </div>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">🌐 English</option>
+                <option value="hi">🇮🇳 हिंदी</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <!-- Hamburger menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul id="navMenu">
+                <li><a href="Home.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="About us.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="Admissions.html" data-i18n="nav_admissions">Admissions</a></li>
+                <li><a href="Facilities.html" data-i18n="nav_facilities">Facilities</a></li>
+                <li><a href="Events.html" class="active" data-i18n="nav_events">Events</a></li>
+                <li><a href="Donations.HTML" data-i18n="nav_donations">Donations</a></li>
+                <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Events Section -->
+    <section class="content-section">
+        <h2 class="section-title" data-i18n="events_title">School Events & Activities</h2>
+        <p style="text-align: center; color: #666; font-size: 18px; margin-bottom: 60px; line-height: 1.8; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Our school celebrates a vibrant calendar of cultural, academic, and sporting events throughout the year. These events foster creativity, teamwork, and personal growth among our students.
+        </p>
+
+        <!-- Events by Category -->
+        
+        <!-- Cultural Events -->
+        <div style="margin-bottom: 80px;">
+            <h2 style="color: #2c3e50; font-size: 24px; font-weight: 800; margin-bottom: 40px; padding-bottom: 15px; border-bottom: 3px solid #ff6b35; display: inline-block;">🎭 Cultural Events</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px;">
+                <!-- Rangoli Competition -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🎨</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event1_title">Rangoli Competition</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event1_desc">Competition for students to create beautiful rangolis showcasing their artistic talents and cultural pride.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 October - November</p>
+                </div>
+
+                <!-- Mehndi -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">✋</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event2_title">Mehndi Competition</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event2_desc">Traditional mehndi decoration competition for girls to celebrate Indian customs and artistry.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 October - November</p>
+                </div>
+
+                <!-- Cultural Fest -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🎭</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event3_title">Cultural Fest</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event3_desc">Annual celebration with dance, singing, drama performances, and cultural showcases.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 January - February</p>
+                </div>
+
+                <!-- Krishna Janmashtami -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🪔</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event7_title">Krishna Janmashtami</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event7_desc">Special decorations and celebrations to commemorate Lord Krishna's birth with cultural activities.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 August - September</p>
+                </div>
+
+                <!-- Ramcharit Competition -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">📖</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event8_title">Ramcharit Competition</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event8_desc">Recitation and competition of Ramcharitmanas promoting Indian literature and spiritual values.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 October - November</p>
+                </div>
+
+                <!-- Hanuman Chalisa -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🙏</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event9_title">Hanuman Chalisa Recitation</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event9_desc">Group recitation of Hanuman Chalisa fostering spiritual connection and collective learning.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 Year-Round</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sports & Fitness Events -->
+        <div style="margin-bottom: 80px;">
+            <h2 style="color: #2c3e50; font-size: 24px; font-weight: 800; margin-bottom: 40px; padding-bottom: 15px; border-bottom: 3px solid #ff6b35; display: inline-block;">⚽ Sports & Physical Training</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px;">
+                <!-- Sports -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">⚽</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event4_title">Sports Championships</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event4_desc">Football, cricket, volleyball, and other sports competitions promoting teamwork and fitness.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 March - April</p>
+                </div>
+
+                <!-- Martial Arts Training -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🥋</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event5_title">Martial Arts Training</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event5_desc">Professional martial arts training for students for self-defense and physical discipline.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 Year-Round</p>
+                </div>
+
+                <!-- Sword Training -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🗡️</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event6_title">Sword Training</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event6_desc">Traditional sword practice and weapon training teaching historical skills and discipline.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 Year-Round</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Environmental & Social Events -->
+        <div style="margin-bottom: 60px;">
+            <h2 style="color: #2c3e50; font-size: 24px; font-weight: 800; margin-bottom: 40px; padding-bottom: 15px; border-bottom: 3px solid #ff6b35; display: inline-block;">🌱 Environmental & Social Initiatives</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px;">
+                <!-- Tree Plantation -->
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-top: 4px solid #ff6b35; transition: all 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🌳</div>
+                    <h3 style="color: #2c3e50; font-weight: 800; font-size: 20px; margin: 0 0 12px 0;" data-i18n="event10_title">Tree Plantation Drive</h3>
+                    <p style="color: #666; margin: 0; line-height: 1.6; font-size: 15px;" data-i18n="event10_desc">Tree plantation activities for students promoting environmental awareness and green campus initiatives.</p>
+                    <p style="color: #ff6b35; font-weight: 700; margin: 15px 0 0 0; font-size: 13px;">📅 June - July</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 50px 40px; border-radius: 15px; text-align: center; border-left: 5px solid #ff6b35;">
+            <h3 style="color: #2c3e50; font-size: 26px; font-weight: 800; margin-bottom: 15px;">🎉 Join Our Community</h3>
+            <p style="color: #666; line-height: 1.8; margin: 0; font-size: 16px;">
+                Participate in our diverse events and activities designed to nurture talent, build character, and create lifelong memories. Our events foster creativity, teamwork, leadership, and a strong sense of community.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong data-i18n="footer_school_name">Seva Bharti Vivekanand Vidya Mandir</strong></p>
+        <p data-i18n="footer_tagline">Empowering Rural Education | Building Bright Futures</p>
+        <p>&copy; 2025 Seva Bharti Vivekanand Vidya Mandir. All rights reserved.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        const navLinks = document.querySelectorAll('#navMenu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickOnHamburger = hamburger.contains(event.target);
+            
+            if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

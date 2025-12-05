@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="about_title">About Us - Seva Bharti Vivekanand Vidya Mandir</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section-left">
+                <img src="images/logo (1).jpeg" alt="School Logo">
+            </div>
+            
+            <div class="school-info">
+                <h1 data-i18n="school_name">Seva Bharti Vivekanand Vidya Mandir</h1>
+                <p data-i18n="school_tagline">Empowering Rural Education with Excellence</p>
+            </div>
+            
+            <div class="header-right">
+                <img src="images/1394085030_swami_vivekanand_332 (1)-Photoroom.png" alt="Right Logo">
+            </div>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">🌐 English</option>
+                <option value="hi">🇮🇳 हिंदी</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            
+            <ul id="navMenu">
+                <li><a href="Home.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="About us.html" class="active" data-i18n="nav_about">About Us</a></li>
+                <li><a href="Admissions.html" data-i18n="nav_admissions">Admissions</a></li>
+                <li><a href="Facilities.html" data-i18n="nav_facilities">Facilities</a></li>
+                <li><a href="Events.html" data-i18n="nav_events">Events</a></li>
+                <li><a href="Donations.html" data-i18n="nav_donations">Donations</a></li>
+                <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <h2 class="section-title" data-i18n="about_title">About Our School</h2>
+
+        <!-- Vision & Values Cards -->
+        <div class="features" style="margin-top: 60px;">
+            <div class="feature-card">
+                <div class="feature-icon">👨‍🎓</div>
+                <h3 data-i18n="vision_title">Our Vision</h3>
+                <p data-i18n="vision_text">
+                    To provide quality education to rural children and empower them to become responsible citizens who contribute meaningfully to society. We envision a future where every child, regardless of their background, has access to excellent educational opportunities.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3 data-i18n="values_title">Our Values</h3>
+                <p data-i18n="values_text">
+                    We believe in fostering values of discipline, integrity, compassion, and respect. Our educational philosophy centers on character building alongside academic achievement, ensuring our students grow into ethical and responsible members of society.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- History & Achievements Section -->
+<div class="history-section" style="margin-top: 80px;">
+    <h2 class="section-title" data-i18n="history_title">Our Journey</h2>
+
+    <div class="features" style="margin-top: 60px; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+
+        <!-- School History Card -->
+        <div class="feature-card" style="flex: 1 1 45%; max-width: 550px; text-align: left;">
+            <div class="feature-icon">📖</div>
+            <h3 data-i18n="history_subtitle" style="color: #ff6b35;">School History</h3>
+            <p data-i18n="history_text1">
+                Established with the vision of bringing quality education to rural areas, Seva Bharti Vivekanand Vidya Mandir has been serving the community with dedication and excellence. Over the years, we have grown from a small institution to a respected educational center that continues to transform lives through education.
+            </p>
+            <p data-i18n="history_text2">
+                Our journey began with a small group of dedicated educators who believed that every child deserves access to quality education. Today, we stand proud as a beacon of hope and opportunity for countless students and their families in the region.
+            </p>
+        </div>
+
+        <!-- Our Achievements Card -->
+        <div class="feature-card" style="flex: 1 1 45%; max-width: 550px; background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%); border-left: 6px solid #f4b400; text-align: left;">
+            <div class="feature-icon">🏆</div>
+            <h3 data-i18n="achievement_heading" style="color: #d49a00;">Our Achievements</h3>
+            <p data-i18n="achievement_text" style="margin-top: 10px; line-height: 1.8; color: #444;">
+                Transforming rural education for over a decade • Educating thousands of students • Creating community leaders • Building a brighter tomorrow
+            </p>
+        </div>
+    </div>
+
+    <!-- Principal Message Card -->
+    <div class="feature-card" style="margin: 60px auto 0 auto; max-width: 800px; text-align: center; background: #fff3e0; border-left: 6px solid #ff6b35;">
+        
+        <h3 style="color: #2c3e50; font-size: 26px; margin-bottom: 15px;" data-i18n="principal_message_title">Principal's Message</h3>
+
+        <div class="principal-photo" style="margin: 0 auto 20px auto; width: 150px; height: 150px;">
+            <img src="images/Gemini_Generated_Image_klh5vfklh5vfklh5.png" 
+                 alt="Principal Photo" 
+                 style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+        </div>
+
+        <h4 style="color: #2c3e50; font-size: 20px; margin-bottom: 5px; font-weight: 800;" data-i18n="principal_name">Mrs. Seema Bhasin</h4>
+        <p style="color: #ff6b35; font-weight: 700; margin-bottom: 20px; font-size: 14px;" data-i18n="principal_designation">
+            Principal, Seva Bharti Vivekanand Vidya Mandir
+        </p>
+
+        <p style="color: #2c3e50; line-height: 1.8; font-size: 16px; font-style: italic; margin: 0 20px 20px 20px;" data-i18n="principal_message">
+            "The greatest gift we can give our children is not just knowledge, but the wisdom to use it with integrity and compassion..."
+        </p>
+    </div>
+</div>
+
+
+        <!-- Why We Stand Out -->
+        <div style="margin-top: 80px;">
+            <h2 class="section-title" data-i18n="why_title">Why We Stand Out</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3 data-i18n="feature1_title">Experienced Educators</h3>
+                    <p data-i18n="feature1_text">Our dedicated faculty members are committed to providing personalized attention and fostering a love for learning in every student.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 data-i18n="feature2_title">Community Focus</h3>
+                    <p data-i18n="feature2_text">We are deeply rooted in our community and actively work towards the holistic development of rural education.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3 data-i18n="feature3_title">Comprehensive Curriculum</h3>
+                    <p data-i18n="feature3_text">We offer a balanced curriculum that combines traditional values with modern educational approaches.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 data-i18n="feature4_title">Student-Centric Approach</h3>
+                    <p data-i18n="feature4_text">Every decision we make is guided by what is best for our students' growth and development.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3 data-i18n="feature5_title">Inclusive Environment</h3>
+                    <p data-i18n="feature5_text">We welcome students from all backgrounds and provide equal opportunities for everyone to excel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3 data-i18n="feature6_title">Character Building</h3>
+                    <p data-i18n="feature6_text">Beyond academics, we focus on developing moral values, leadership skills, and social responsibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong data-i18n="footer_school_name">Seva Bharti Vivekanand Vidya Mandir</strong></p>
+        <p data-i18n="footer_tagline">Empowering Rural Education | Building Bright Futures</p>
+        <p data-i18n="footer_rights">&copy; 2025 Seva Bharti Vivekanand Vidya Mandir. All rights reserved.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+
+    <!-- Hamburger Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        document.addEventListener('click', e => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

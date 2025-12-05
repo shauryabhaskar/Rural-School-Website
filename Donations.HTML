@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="donation_page_title">Donations - Seva Bharti Vivekanand Vidya Mandir</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section-left">
+                <img src="images/logo (1).jpeg" alt="School Logo">
+            </div>
+
+            <div class="school-info">
+                <h1 data-i18n="school_name">Seva Bharti Vivekanand Vidya Mandir</h1>
+                <p data-i18n="school_tagline">Empowering Rural Education with Excellence</p>
+            </div>
+
+            <div class="header-right">
+                <img src="images/1394085030_swami_vivekanand_332 (1)-Photoroom.png" alt="Right Logo">
+            </div>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">🌐 English</option>
+                <option value="hi">🇮🇳 हिंदी</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul id="navMenu">
+                <li><a href="Home.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="About us.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="Admissions.html" data-i18n="nav_admissions">Admissions</a></li>
+                <li><a href="Facilities.html" data-i18n="nav_facilities">Facilities</a></li>
+                <li><a href="Events.html" data-i18n="nav_events">Events</a></li>
+                <li><a href="Donations.html" class="active" data-i18n="nav_donations">Donations</a></li>
+                <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Donation Section -->
+    <section class="content-section">
+        <h2 class="section-title" data-i18n="donation_title">Support Our Mission</h2>
+        <p data-i18n="donation_intro" style="text-align:center; color:#555; max-width:800px; margin:auto; line-height:1.8; font-size:18px;">
+            Every contribution helps us provide quality education, better facilities, and a brighter future for children in rural areas. 
+            Join hands with <strong>Seva Bharti Vivekanand Vidya Mandir</strong> to make a lasting impact.
+        </p>
+
+        <!-- Donation Options -->
+        <div class="donation-options" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:30px; margin-top:60px;">
+
+            <!-- Bank Transfer -->
+            <div class="donation-card" style="background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); padding:30px; border-top:4px solid #FF9933;">
+                <div style="font-size:48px; margin-bottom:10px;">🏦</div>
+                <h3 data-i18n="bank_transfer_title" style="font-size:20px; color:#2c3e50; font-weight:800;">Bank Transfer</h3>
+                <p style="color:#666; line-height:1.6;">
+                    <strong data-i18n="bank_account_name_label">Account Name:</strong> <span data-i18n="bank_account_name">Seva Bharti Vivekanand Vidya Mandir</span><br>
+                    <strong data-i18n="bank_account_number_label">Account No:</strong> <span data-i18n="bank_account_number">123456789012</span><br>
+                    <strong data-i18n="bank_ifsc_label">IFSC:</strong> <span data-i18n="bank_ifsc">SBIN0001234</span><br>
+                    <strong data-i18n="bank_name_label">Bank:</strong> <span data-i18n="bank_name">State Bank of India</span><br>
+                    <strong data-i18n="bank_branch_label">Branch:</strong> <span data-i18n="bank_branch">City Branch, District</span>
+                </p>
+            </div>
+
+            <!-- UPI / QR Code -->
+            <div class="donation-card" style="background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); padding:30px; border-top:4px solid #FF9933;">
+                <div style="font-size:48px; margin-bottom:10px;">📱</div>
+                <h3 data-i18n="upi_title" style="font-size:20px; color:#2c3e50; font-weight:800;">UPI / QR Code</h3>
+                <p style="color:#666; line-height:1.6;" data-i18n="upi_desc">
+                    Donate instantly using UPI.<br>
+                    <strong data-i18n="upi_id_label">UPI ID:</strong> <span data-i18n="upi_id">sbvvmandir@upi</span><br><br>
+                </p>
+                <img src="images/qr.png" alt="Donation QR Code" data-i18n="upi_qr_alt" style="width:150px; border-radius:8px; margin-top:10px;">
+            </div>
+
+            <!-- In-Kind Donations -->
+            <div class="donation-card" style="background:#fff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); padding:30px; border-top:4px solid #FF9933;">
+                <div style="font-size:48px; margin-bottom:10px;">🎒</div>
+                <h3 data-i18n="in_kind_title" style="font-size:20px; color:#2c3e50; font-weight:800;">In-Kind Donations</h3>
+                <p data-i18n="in_kind_desc" style="color:#666; line-height:1.6;">
+                    You can contribute books, uniforms, sports equipment, or educational materials.  
+                    Contact us to coordinate a donation drop or pickup.
+                </p>
+            </div>
+        </div>
+
+        <!-- Donation Impact Section -->
+        <div class="donation-impact" style="margin-top:80px; background:linear-gradient(135deg, #fffaf2, #fff3e0); padding:50px 30px; border-radius:15px; border-left:6px solid #FF9933;">
+            <h3 data-i18n="impact_title" style="text-align:center; font-size:26px; font-weight:800; color:#2c3e50; margin-bottom:20px;">💛 Your Contribution Makes a Difference</h3>
+            <p data-i18n="impact_text" style="max-width:800px; margin:auto; color:#555; line-height:1.8; text-align:center;">
+                Each rupee helps us expand our programs, improve classrooms, support teachers, and empower students from underprivileged backgrounds.
+                Together, we can build a stronger and more educated society.
+            </p>
+        </div>
+
+        <!-- Contact for Donors -->
+        <div class="donor-contact" style="margin-top:60px; text-align:center;">
+            <h3 data-i18n="partner_title" style="font-size:24px; color:#2c3e50; font-weight:800;">🤝 Want to Discuss a Partnership?</h3>
+            <p data-i18n="partner_desc" style="color:#666; line-height:1.8; max-width:600px; margin:20px auto;">
+                For CSR collaborations, bulk donations, or volunteering, please contact our team.
+            </p>
+            <a href="Contact.html" data-i18n="contact_button"
+               style="background-color:#FF9933; color:#fff; padding:12px 25px; border-radius:8px; text-decoration:none; font-size:16px; font-weight:600; transition:background-color 0.3s;">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong data-i18n="footer_school_name">Seva Bharti Vivekanand Vidya Mandir</strong></p>
+        <p data-i18n="footer_tagline">Empowering Rural Education | Building Bright Futures</p>
+        <p data-i18n="footer_rights">&copy; 2025 Seva Bharti Vivekanand Vidya Mandir. All rights reserved.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

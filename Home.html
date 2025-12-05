@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Home - Seva Bharti Vivekanand Vidya Mandir</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            
+            <div class="logo-section-left">
+                <img src="images/logo (1).jpeg" alt="School Logo">
+            </div>
+            
+            <!-- Center School Info -->
+            <div class="school-info">
+                <h1 data-i18n="school_name">Seva Bharti Vivekanand Vidya Mandir</h1>
+                <p data-i18n="school_tagline">Empowering Rural Education with Excellence</p>
+            </div>
+            
+            <!-- Right Logo -->
+            <div class="header-right">
+                <img src="images/1394085030_swami_vivekanand_332 (1)-Photoroom.png" alt="Right Logo">
+            </div>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">🌐 English</option>
+                <option value="hi">🇮🇳 हिंदी</option>
+            </select>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <!-- Hamburger menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul id="navMenu">
+                <li><a href="Home.html" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="About us.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="Admissions.html" data-i18n="nav_admissions">Admissions</a></li>
+                <li><a href="Facilities.html" data-i18n="nav_facilities">Facilities</a></li>
+                <li><a href="Events.html" data-i18n="nav_events">Events</a></li>
+                <li><a href="Donations.HTML" data-i18n="nav_donations">Donations</a></li>
+                <li><a href="Contact.html" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.44.55 PM.jpeg" alt="Event 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.44.56 PM.jpeg" alt="Event 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.44.57 PM.jpeg" alt="Event 3">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.44.58 PM.jpeg" alt="Event 4">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.44.58 PM (1).jpeg" alt="Event 5">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.44.59 PM.jpeg" alt="Event 6">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.45.00 PM.jpeg" alt="Event 7">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.45.01 PM.jpeg" alt="Event 8">
+            </div>
+            <div class="slide fade">
+                <img src="images/WhatsApp Image 2025-10-20 at 8.45.01 PM (1).jpeg" alt="Event 9">
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h2 data-i18n="hero_title">Welcome to Seva Bharti Vivekanand Vidya Mandir</h2>
+            <p data-i18n="hero_subtitle">Nurturing Young Minds, Building Bright Futures</p>
+            <a href="admissions.html" class="cta-button" data-i18n="apply_button">Apply for Admission</a>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <h2 class="section-title" data-i18n="why_choose">Why Choose Our School?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3 data-i18n="feature1_title">Quality Education</h3>
+                <p data-i18n="feature1_desc">Dedicated teachers providing comprehensive education with modern teaching methods tailored for rural excellence.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 data-i18n="feature2_title">Holistic Development</h3>
+                <p data-i18n="feature2_desc">Focus on academic, physical, and moral development to create well-rounded individuals.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3 data-i18n="feature3_title">Affordable Fees</h3>
+                <p data-i18n="feature3_desc">Quality education at minimal cost, ensuring every child has access to learning opportunities.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏫</div>
+                <h3 data-i18n="feature4_title">Safe Environment</h3>
+                <p data-i18n="feature4_desc">Secure and nurturing campus where students can learn and grow with confidence.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌱</div>
+                <h3 data-i18n="feature5_title">Inclusive Community</h3>
+                <p data-i18n="feature5_desc">An environment that fosters diversity, collaboration, and respect among all students.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌟</div>
+                <h3 data-i18n="feature6_title">Empowering Atmosphere</h3>
+                <p data-i18n="feature6_desc">A supportive space where students are inspired to explore, create, and achieve their potential.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; text-align: center;">
+            <h2 class="section-title" data-i18n="latest_announcements">Latest Announcements</h2>
+            <div class="announcement-box">
+                <div class="announcement-item">
+                    <h3>📢 <span data-i18n="announcement_title">Admission Open for Academic Year 2025-26</span></h3>
+                    <p data-i18n="announcement_desc">Admissions are now open for all classes. Limited seats available. Apply now!</p>
+                    <a href="admissions.html" class="cta-button" style="font-size: 14px; padding: 10px 25px;" data-i18n="apply_now">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong data-i18n="footer_school_name">Seva Bharti Vivekanand Vidya Mandir</strong></p>
+        <p data-i18n="footer_tagline">Empowering Rural Education | Building Bright Futures</p>
+        <p>&copy; 2025 Seva Bharti Vivekanand Vidya Mandir. All rights reserved.</p>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Slideshow Script -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+
+    
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        const navLinks = document.querySelectorAll('#navMenu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickOnHamburger = hamburger.contains(event.target);
+            
+            if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
